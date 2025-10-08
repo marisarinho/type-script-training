@@ -8,7 +8,7 @@ export class Answer {
     }
 
     public getAnswers(): number[] {
-        return [...this.answer]; 
+        return this.answer; 
     }
 
     public getName(): string {
