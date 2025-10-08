@@ -8,7 +8,7 @@ export class Answer {
     }
 
     public getAnswers(): number[] {
-        return [...this.answer]; // Retorna cópia para evitar mutação
+        return [...this.answer]; 
     }
 
     public getName(): string {
