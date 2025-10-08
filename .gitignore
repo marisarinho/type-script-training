@@ -1,0 +1,19 @@
+# Dependências do Node
+/node_modules
+
+# Pasta com o código JavaScript compilado
+/dist
+
+# Arquivos de log do NPM
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Variáveis de ambiente (nunca devem ir para o repositório)
+.env
+.env.local
+.env.*.local
+
+# Arquivos de configuração de editores
+.vscode/
