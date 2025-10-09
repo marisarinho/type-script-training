@@ -11,16 +11,16 @@ interface notasFinais {
 export class Exam {
     private weight: Weight;
     private answer: Answer; 
-    private exam: Array<Answer>; 
+    private answers: Array<Answer>; 
 
     constructor(answer: Answer, weight: Weight) {
         this.answer = answer;
         this.weight = weight;
-        this.exam = [];
+        this.answers = [];
     }
 
     public add(provaDoAluno: Answer): void {
-        this.exam.push(provaDoAluno);
+        this.answers.push(provaDoAluno);
     }
 
    
@@ -28,7 +28,7 @@ export class Exam {
         const gabarito = this.answer.getAnswers();
         const result: notasFinais[] = [];
 
-        for (const provaDoAluno of this.exam) {
+        for (const provaDoAluno of this.answers) {
             const respostasDoAluno = provaDoAluno.getAnswers();
             let notaFinal = 0;
 
@@ -113,3 +113,4 @@ export class Exam {
         return notasMaiores;
     }
 }
+ 
